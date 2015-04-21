@@ -1,0 +1,18 @@
+﻿@using Orc.ReactProcessor.Web
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = null;
+    var model = ViewBag.Model;
+}
+
+<html>
+<head>
+    <title>React Example</title>
+    <script src="/assets/bundle.js"></script>
+</head>
+<body>
+    @Html.Render("reactApp", new {model= (object)model})
+    
+    @Html.RenderReactAssets()
+</body>
+</html>

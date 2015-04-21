@@ -1,0 +1,15 @@
+{
+  "name": "Orc.ReactDemo",
+  "version": "0.1.0",
+  "devDependencies": {
+    "flux": "^2.0.1",
+    "jsx-loader": "^0.13.1",
+    "object-assign": "^2.0.0",
+    "react": "^0.13.2",
+    "react-router": "^0.13.2",
+    "react-tools": "^0.13.2",
+    "superagent": "^1.2.0",
+    "webpack": "^1.8.5"
+  },
+  "dependencies": {}
+}
