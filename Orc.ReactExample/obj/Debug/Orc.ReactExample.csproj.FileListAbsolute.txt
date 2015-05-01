@@ -78,5 +78,5 @@ D:\Work\React Example\Orc.ReactExample\Orc.ReactExample\obj\Debug\Orc.ReactExamp
 D:\Work\React Example\Orc.ReactExample\Orc.ReactExample\obj\Debug\Orc.ReactExample.dll
 D:\Work\React Example\Orc.ReactExample\Orc.ReactExample\obj\Debug\Orc.ReactExample.pdb
 D:\Work\React Example\Orc.ReactExample\Orc.ReactExample\bin\ClearScript.dll
-D:\Work\React Example\Orc.ReactExample\Orc.ReactExample\bin\Orc.ReactProcessor.Core.dll
-D:\Work\React Example\Orc.ReactExample\Orc.ReactExample\bin\Orc.ReactProcessor.Web.dll
+D:\Work\React Example\Orc.ReactExample\Orc.ReactExample\bin\Orc.SuperchargedReact.Core.dll
+D:\Work\React Example\Orc.ReactExample\Orc.ReactExample\bin\Orc.SuperchargedReact.Web.dll

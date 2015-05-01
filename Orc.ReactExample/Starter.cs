@@ -5,7 +5,7 @@ using System.Web;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
-using Orc.ReactProcessor.Web;
+using Orc.SuperchargedReact.Web;
 using Umbraco.Core;
 
 namespace Orc.ReactExample
