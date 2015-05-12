@@ -8,9 +8,6 @@ var Link = Router.Link;
 var RouteHandler = Router.RouteHandler;
 
 var ArticleServerActions = require("./actions/ArticleServerActionCreators");
-
-var Constants = require("./Constants" );
-//var DOMHelpers = require("./utils/domHelpers");
 var ArticleFolderApp = require("./components/ArticleFolder.jsx").ArticleFolderApp;
 var ArticleApp = require("./components/Article.jsx").ArticleApp;
 
@@ -24,28 +21,12 @@ var App = React.createClass({
 		var handlerName = routes.reverse()[0].name;
 		var parentHandlerName = routes.reverse()[1].name;
   		
-  		
-		// When we first load we need to "seed" the Flux store with our initial data that we send down in page from the server
-		if ( typeof window !== "undefined" ) { 
-		// in our browser
-
-			switch( handlerName ) {
-				case "articlesRoot":
-					ArticleServerActions.gotArticles( global._ReactNET_InitialData_JSON.model.articles );
-					case "article":
-					ArticleServerActions.GotFullDetails( global._ReactNET_InitialData_JSON.model );
-				break;
-			}
-		}
-		else
-		{
-			switch( handlerName ) {
-				case "articlesRoot":
-					ArticleServerActions.gotArticles(this.props.model.articles );
+  		switch( handlerName ) {
+			case "articlesRoot":
+				ArticleServerActions.gotArticles( this.props.model.articles );
 				case "article":
-					ArticleServerActions.GotFullDetails(this.props.model );
-				break;
-			}
+				ArticleServerActions.GotFullDetails( this.props.model );
+			break;
 		}
 	},
   
@@ -77,13 +58,11 @@ var PageNotFound = React.createClass({
 			<div>
 				<p>Page not found!</p>
 			</div>
-		);
+		); 
 	}
 });
 
-/* GLOBAL ROUTES OBJECT - The server side rendering will read this in hence it being global...I think */ 
-//removed this route as i don't think we need it
-//<Route name="confirmation" path="/confirmation" handler={NotBuiltYet} />
+/* GLOBAL ROUTES OBJECT - The server side rendering will read this in hence it being global */ 
 var reactRoutesConfig = (
 	<Route name="app" handler={App}>
 		<Route name="articlesRoot" path="/articles" handler={ArticleFolderApp} />
@@ -93,5 +72,5 @@ var reactRoutesConfig = (
 	</Route>
 );
 
-/* Belt and braces */
-global.reactRoutesConfig = reactRoutesConfig;
+/* Store our routes globally so our server-side stuff can get to it easily */
+global.SuperChargedReact.routes = reactRoutesConfig;
