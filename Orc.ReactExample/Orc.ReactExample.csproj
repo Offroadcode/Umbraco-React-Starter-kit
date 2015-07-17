@@ -51,7 +51,7 @@
     </Reference>
     <Reference Include="ClearScript, Version=5.4.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Orc.SuperchargedReact.0.29\lib\net45\ClearScript.dll</HintPath>
+      <HintPath>..\packages\Orc.SuperchargedReact.0.30\lib\net45\ClearScript.dll</HintPath>
     </Reference>
     <Reference Include="ClientDependency.Core">
       <HintPath>..\packages\ClientDependency.1.8.3.1\lib\net45\ClientDependency.Core.dll</HintPath>
@@ -112,11 +112,13 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Orc.SuperchargedReact.Core">
-      <HintPath>..\packages\Orc.SuperchargedReact.0.29\lib\net45\Orc.SuperchargedReact.Core.dll</HintPath>
+    <Reference Include="Orc.SuperchargedReact.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Orc.SuperchargedReact.0.30\lib\net45\Orc.SuperchargedReact.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Orc.SuperchargedReact.Web">
-      <HintPath>..\packages\Orc.SuperchargedReact.0.29\lib\net45\Orc.SuperchargedReact.Web.dll</HintPath>
+    <Reference Include="Orc.SuperchargedReact.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Orc.SuperchargedReact.0.30\lib\net45\Orc.SuperchargedReact.Web.dll</HintPath>
     </Reference>
     <Reference Include="SQLCE4Umbraco">
       <HintPath>..\packages\UmbracoCms.Core.7.2.4\lib\SQLCE4Umbraco.dll</HintPath>
